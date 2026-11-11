@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEotpKPOGPADRltZSWUWguy0D3ozs2c1_Sl8TDsRldyw&s=10">
+    <title>GK BMI Calculator</title>
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="bmicard">
+
+            <div class="header">
+                <h1>GK BMI Calculator</h1>
+                <p>Check your Body Mass Index</p>
+            </div>
+
+            <form id="bmi">
+
+                <div class="inputg">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" placeholder="Enter your age" required>
+                </div>
+
+                <div class="inputg">
+                    <label>Gender</label>
+
+                    <div class="gender-options">
+                        <label for="male">
+                            <input type="radio" id="male" name="gender" value="male"> Male
+                        </label>
+
+                        <label for="female">
+                            <input type="radio" id="female" name="gender" value="female"> Female
+                        </label>
+
+                        <label for="other">
+                            <input type="radio" id="other" name="gender" value="other"> Other
+                        </label>
+                    </div>
+                </div>
+
+                <div class="inputg">
+                    <label for="height">Height (cm)</label>
+                    <input type="number" id="height" placeholder="Enter height in cm" required>
+                </div>
+
+                <div class="inputg">
+                    <label for="weight">Weight (kg)</label>
+                    <input type="number" id="weight" placeholder="Enter weight in kg" required>
+                </div>
+
+                <div class="buttong">
+                    <button type="button" class="btn-calculate" onclick="displayResult()">Calculate BMI</button>
+                    <button type="reset" class="btn-clear" onclick="clearDisplay()">Clear</button>
+                </div>
+
+            </form>
+
+            <div id="result" class="resultb"></div>
+
+            <div class="footer">
+                <p>Stay Healthy . Stay Fit</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
